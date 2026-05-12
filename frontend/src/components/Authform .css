@@ -1,0 +1,108 @@
+.sv-auth-page {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.sv-auth-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.sv-auth-header {
+  padding: 28px 28px 0;
+  margin-bottom: 24px;
+}
+.sv-auth-title {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+.sv-auth-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.sv-auth-form {
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sv-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sv-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.sv-label-opt {
+  font-weight: 400;
+  opacity: 0.6;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* File drop zone */
+.sv-file-drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface2);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  min-height: 80px;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.sv-file-drop:hover {
+  border-color: var(--amber);
+}
+.sv-file-placeholder {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.sv-avatar-preview {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 8px;
+}
+
+/* reCAPTCHA */
+.sv-recaptcha-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.sv-auth-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.sv-auth-footer {
+  padding: 20px 28px 24px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
+.sv-auth-link {
+  color: var(--amber);
+}
+.sv-auth-link:hover {
+  text-decoration: underline;
+}
