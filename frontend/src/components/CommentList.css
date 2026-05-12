@@ -1,0 +1,46 @@
+.sv-no-comments {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 8px 0;
+}
+
+.sv-comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.sv-comment {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.sv-comment:last-child {
+  border-bottom: none;
+}
+
+.sv-comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.sv-comment-author {
+  font-size: 12px;
+  font-family: "DM Mono", monospace;
+  color: var(--amber);
+  letter-spacing: 0.02em;
+}
+
+.sv-comment-time {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: "DM Mono", monospace;
+}
+
+.sv-comment-text {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.55;
+}
