@@ -13,8 +13,8 @@ function Header() {
     <header className="sv-header">
       <div className="sv-header-inner">
         <Link to="/" className="sv-logo">
-          <span className="sv-logo-mark">S</span>
-          <span className="sv-logo-text">napVault</span>
+          <span className="sv-logo-mark">Photo</span>
+          <span className="sv-logo-text">Sharing</span>
         </Link>
 
         <nav className="sv-nav">
