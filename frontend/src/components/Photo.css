@@ -1,0 +1,145 @@
+.container {
+  width: 75%;
+}
+ 
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .reaction-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .like-button, .dislike-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 1px 8px;
+    border-radius: 4px;
+  }
+
+  .like-button {
+    color: rgb(70, 159, 29);
+  }
+
+  .dislike-button {
+    color: rgba(217, 25, 25, 0.66);
+  }
+  
+  .fa-icon {
+    font-size: 1.5em;
+  }
+
+  .fa-icon:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+  }
+
+  .counter {
+    color:rgb(244, 244, 232);
+  }
+  
+  .posted-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .posted-by, .posted-at {
+    color: rgba(244, 244, 232, 0.737);
+    font-size: 0.9em;
+  }
+
+  .choose-photo-label {
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+
+  .form-control {
+    background-color: #333;
+    color: #FFF;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+  .comment-button {
+    color: rgb(244, 244, 232);
+    background-color: rgba(0, 157, 255, 0.699);
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: 10px; 
+  }
+
+  .comment-form-container {
+    margin-bottom: 10px;
+  }
+
+
+  .profile-info {
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.rounded-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border: 1px solid #171717
+}
+
+.statistics {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.statistics p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.statistics-card {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container-darker {
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.report-button {
+  background: transparent;
+  border: none;
+  color: rgb(255, 85, 0);
+}
