@@ -1,0 +1,36 @@
+.sv-feed-page {
+  min-height: calc(100vh - 56px);
+}
+
+.sv-feed-header {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+}
+
+.sv-feed-title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.sv-feed-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.02em;
+}
+
+.sv-loading {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.04em;
+}
