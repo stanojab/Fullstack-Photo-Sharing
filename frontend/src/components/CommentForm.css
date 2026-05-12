@@ -1,0 +1,18 @@
+.sv-comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.sv-comment-textarea {
+  resize: none;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.sv-comment-submit {
+  align-self: flex-end;
+  padding: 8px 18px;
+  font-size: 11px;
+}
