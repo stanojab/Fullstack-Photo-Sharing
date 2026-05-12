@@ -1,38 +1,75 @@
 import { useContext } from "react";
 import { UserContext } from "../userContext";
-import { Link } from "react-router-dom";
-import './Header.css'
+import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
 
-function Header(props) {
-    const { user } = useContext(UserContext);
+function Header() {
+  const { user } = useContext(UserContext);
+  const location = useLocation();
 
-    return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark glass-navbar">
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
-                        <Link className="nav-link" to='/'>Home</Link>
-                    </li>
-                    {user ? (
-                        <>
-                            <li className="nav-item"><Link className="nav-link" to='/hotphotos/'>Hot</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to='/publish'>Publish</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to='/profile'>Profile</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to='/logout'>Logout</Link></li>
-                        </>
-                    ) : (
-                        <>
-                            <li className="nav-item"><Link className="nav-link" to='/login'>Login</Link></li>
-                            <li className="nav-item"><Link className="nav-link" to='/register'>Register</Link></li>
-                        </>
-                    )}
-                </ul>
-            </div>
+  const isActive = (path) => location.pathname === path;
+
+  return (
+    <header className="sv-header">
+      <div className="sv-header-inner">
+        <Link to="/" className="sv-logo">
+          <span className="sv-logo-mark">S</span>
+          <span className="sv-logo-text">napVault</span>
+        </Link>
+
+        <nav className="sv-nav">
+          <Link
+            to="/"
+            className={`sv-nav-link ${isActive("/") ? "active" : ""}`}
+          >
+            New
+          </Link>
+          {user && (
+            <Link
+              to="/hotphotos"
+              className={`sv-nav-link ${isActive("/hotphotos") ? "active" : ""}`}
+            >
+              Hot
+            </Link>
+          )}
+
+          <div className="sv-nav-divider" />
+
+          {user ? (
+            <>
+              <Link
+                to="/publish"
+                className="sv-btn sv-btn-primary sv-nav-publish"
+              >
+                + Publish
+              </Link>
+              <Link
+                to="/profile"
+                className={`sv-nav-link ${isActive("/profile") ? "active" : ""}`}
+              >
+                {user.username}
+              </Link>
+              <Link to="/logout" className="sv-nav-link sv-nav-logout">
+                Logout
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className={`sv-nav-link ${isActive("/login") ? "active" : ""}`}
+              >
+                Login
+              </Link>
+              <Link to="/register" className="sv-btn sv-btn-primary">
+                Register
+              </Link>
+            </>
+          )}
         </nav>
-    );
+      </div>
+    </header>
+  );
 }
 
 export default Header;

@@ -1,34 +1,89 @@
-.navbar {
-    border-radius: 0;
-    margin-bottom: 20px;
+.sv-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(12, 12, 12, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 }
 
-.navbar-nav {
-    justify-content: center;
-    width: 100%;
-    flex-grow: 1;
+.sv-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.glass-navbar {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Logo */
+.sv-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  text-decoration: none;
+}
+.sv-logo-mark {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--amber);
+  line-height: 1;
+}
+.sv-logo-text {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text);
+  letter-spacing: -0.02em;
 }
 
-.nav-link {
-    transition: color 0.3s, transform 0.3s;
-    flex-grow: 1;
-    text-align: center;
+/* Nav */
+.sv-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.nav-link:hover {
-    color: #fff;
-    transform: scale(1.2);
+.sv-nav-link {
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-muted);
+  border-radius: var(--radius);
+  transition:
+    color var(--transition),
+    background var(--transition);
+  letter-spacing: 0.01em;
+}
+.sv-nav-link:hover {
+  color: var(--text);
+}
+.sv-nav-link.active {
+  color: var(--text);
+  font-weight: 500;
 }
 
-.navbar-collapse {
-    justify-content: center;
+.sv-nav-divider {
+  width: 1px;
+  height: 18px;
+  background: var(--border);
+  margin: 0 8px;
+}
+
+.sv-nav-publish {
+  padding: 7px 16px;
+  font-size: 11px;
+  margin-right: 4px;
+}
+
+.sv-nav-logout {
+  color: var(--text-muted);
+  font-size: 12px;
+  opacity: 0.7;
+}
+.sv-nav-logout:hover {
+  opacity: 1;
+  color: var(--danger);
 }
