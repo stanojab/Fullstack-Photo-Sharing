@@ -1,3 +1,11 @@
+# Photo-Sharing Web Application
+
+![Node.js](https://img.shields.io/badge/Node.js-18.x-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4.x-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-6.x-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)
+![React Router](https://img.shields.io/badge/React_Router-v6-CA4245?style=flat-square&logo=react-router&logoColor=white)
+
 A full-stack photo sharing web app where users can upload, like, dislike, report, and comment on photos. Features a "Hot" feed powered by a time-decay algorithm that surfaces trending content.
 
 ---
@@ -24,12 +32,17 @@ A full-stack photo sharing web app where users can upload, like, dislike, report
 
 - Node.js + Express
 - MongoDB + Mongoose
+- express-session + connect-mongo (persistent sessions)
+- bcrypt (password hashing)
+- multer (file uploads)
+- CORS
 
 **Frontend**
 
-- React
+- React 18
+- React Router v6
 - Context API (global auth state)
-- Bootstrap (UI)
+- CSS
 - FontAwesome (icons)
 - react-google-recaptcha (registration protection)
 
