@@ -2,6 +2,22 @@ A full-stack photo sharing web app where users can upload, like, dislike, report
 
 ---
 
+## Screenshots
+
+**Register**
+![Register Panel](screenshots/register.png)
+
+**Publish Photo**
+![Publish photo](screenshots/publish_photo.png)
+
+**View Photo**
+![View Photo](screenshots/photo_view.png)
+
+**Profile View**
+![Profile View](screenshots/profile_view.png)
+
+---
+
 ## Tech Stack
 
 **Backend**

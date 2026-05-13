@@ -50,7 +50,7 @@ function Register() {
       <div className="sv-auth-card sv-card fade-up">
         <div className="sv-auth-header">
           <h1 className="sv-auth-title">Create account</h1>
-          <p className="sv-auth-sub">Join SnapVault today</p>
+          <p className="sv-auth-sub">Join and share with others</p>
         </div>
 
         <form onSubmit={handleRegister} className="sv-auth-form">
